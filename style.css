@@ -1,0 +1,221 @@
+.body {
+  padding: 0%;
+  margin: 0%;
+  font-family: sans-serif;
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+.home {
+  /* display: flex; */
+  height: 100vh;
+  width: 100%;
+  background-image: url(cemal1.jpg);
+
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+.logo {
+  /* font-size: 2em;
+    letter-spacing: 2px; */
+  width: 400px;
+  position: absolute;
+  margin-left: 10%;
+}
+.logo span {
+  color: white;
+}
+.logo:hover {
+  color: rgb(115, 71, 6);
+}
+.logo span:hover {
+  color: black;
+}
+.nav {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  margin-left: 40%;
+  margin-top: 2%;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 20px;
+  position: relative;
+}
+.nav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 3px solid rgb(28, 0, 0);
+  transition: 0.4s linear;
+}
+.nav a:hover::before {
+  width: 90%;
+}
+.register {
+  padding-left: 350px;
+}
+
+.text {
+  max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(0, 5, 10);
+}
+.text span {
+  letter-spacing: 5px;
+}
+
+.text h1 {
+  font-size: 3.5em;
+}
+.text a {
+  text-decoration: none;
+  background: rgb(32, 1, 1);
+  color: aliceblue;
+  padding: 10px 50px;
+}
+.icon {
+  display: flex;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 90%;
+}
+
+.container {
+  background-color: rgb(115, 71, 6);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+.card {
+  height: 500px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+}
+img {
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;
+}
+.intro {
+  height: 70px;
+  width: 350px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -560px;
+  background: rgb(27, 27, 27, 0.5);
+  color: rgb(249, 248, 248);
+  transition: 0.5s;
+}
+h1 {
+  margin: 10px;
+  font-size: 40px;
+}
+p {
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card :hover {
+  cursor: pointer;
+}
+.card:hover .intro {
+  height: 220px;
+  bottom: -560px;
+  background: black;
+}
+.card:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+footer {
+  background-color: rgb(40, 5, 5);
+  height: auto;
+  width: 100%;
+  font-family: "open sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h4 {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.icon {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12rem 0 4rem 0;
+}
+.icon li {
+  margin: 0 10px;
+}
+.icon a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.icon a i {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-top: 20px;
+}
+.icon a:hover i {
+  color: rgb(115, 71, 6);
+}
+.register {
+  text-decoration: none;
+  color: black(115, 71, 6);
+  padding: 5px 10px;
+  font-size: 15px;
+  background: rgb(115, 71, 6);
+  border-radius: 99px;
+  margin-left: 330px;
+  font-style: italic;
+}
+.register a {
+  color: #fff;
+}
+.register a:hover {
+  color: black;
+}
+.register1 {
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+
+  padding: 10px 15px;
+  margin-left: 350px;
+}
